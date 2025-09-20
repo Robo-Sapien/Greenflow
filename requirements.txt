@@ -1,0 +1,23 @@
+# Core ML
+torch
+torchvision
+scikit-learn
+pandas
+numpy
+
+# Streamlit UI
+streamlit
+matplotlib
+plotly
+networkx
+pyvis
+
+# Azure + OpenAI GPT integration
+azure-ai-ml
+azure-identity
+openai
+
+# Utils
+joblib
+requests
+python-dateutil

@@ -1,0 +1,13 @@
+{
+  "features": [
+    "pH",
+    "EC",
+    "DO",
+    "pumpFlow",
+    "farmLightPct"
+  ],
+  "window": 24,
+  "stride": 1,
+  "hidden": 64,
+  "layers": 1
+}
