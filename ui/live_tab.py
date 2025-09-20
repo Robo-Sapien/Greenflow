@@ -12,7 +12,7 @@ def _load_live_df():
     return df
 
 def render_live_tab():
-    st.header("📡 Live Farm Dashboard")
+    st.header("Live Farm Dashboard")
 
     if "live_df" not in st.session_state:
         st.session_state.live_df = _load_live_df()

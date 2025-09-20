@@ -7,7 +7,7 @@ from sim_tab import render_sim_tab
 
 def main():
     st.set_page_config(page_title="🌱 Greenflow: Indoor Farm Digital Twin", layout="wide")
-    st.title("🌱 Greenflow: Indoor Farm Digital Twin")
+    st.title("🌱 Greenflow: Hydroponics Indoor Farm Digital Twin")
 
     # Environment readiness (for AI Insights)
     ok_endpoint = bool(os.getenv("AZURE_OPENAI_ENDPOINT"))
@@ -18,9 +18,10 @@ def main():
         st.write(f"Endpoint set: {'✅' if ok_endpoint else '❌'}")
         st.write(f"API Key set: {'✅' if ok_key else '❌'}")
         st.write(f"Deployment set: {'✅' if ok_deploy else '❌'}")
-        st.caption("These are only needed for AI Insights. The dashboard still runs without them.")
+        st.write(f"Model deployed: GPT-4.1-nano (Finetuned)")
+        st.write(f"Anomaly Detector: LSTM Autoencoder")
 
-    tab_live, tab_sim = st.tabs(["📡 Live Farm (Rolling Buffer)", "🕹️ Simulator"])
+    tab_live, tab_sim = st.tabs(["📡 Live Farm", "🕹️ Simulator"])
     with tab_live:
         render_live_tab()
     with tab_sim:

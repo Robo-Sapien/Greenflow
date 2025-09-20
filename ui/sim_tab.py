@@ -59,6 +59,6 @@ def render_sim_tab():
     with st.expander("🔎 Feature Reconstruction Errors"):
         st.json(feat_errs)
 
-    with st.expander("🔮 AI Insights"):
+    with st.expander("🤖 AI Insights"):
         insight = ai_insights.get_insights(result)
         st.info(insight)
